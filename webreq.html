@@ -1,0 +1,61 @@
+<!-- *** RESPONSIVE HTML *** --> 
+<as400>top                          *** SECTION "TOP"
+    Content-type: text/html
+    Expires: 0
+    X-XSS-Protection: 1;
+    
+    <!doctype html>
+    <HTML>
+    <HEAD><TITLE>HTTP server functionality for CGIs was just tested</TITLE>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <meta name="DOCUMENTCOUNTRYCODE" value="it"/>
+    <meta name="DOCUMENTLANGUAGECODE" value="EN"/>
+    <link href="/cgidev/css/exhibit.css" rel="stylesheet" type="text/css">
+    <link href="/cgidev/css/tableorder.css" rel="stylesheet" type="text/css">                 
+    <link href="/cgidev/css/exhibitPrint.css" rel="stylesheet" type="text/css" media=print> 
+    <link href="/cgidev/css/webreq.css" rel="stylesheet" type="text/css"> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="//cdn.datatables.net/1.11.0/css/jquery.dataTables.min.css"> 
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="//cdn.datatables.net/1.11.0/js/jquery.dataTables.min.js" ></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/cr-1.5.4/datatables.min.css"/>
+    <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/cr-1.5.4/datatables.min.js"></script>
+
+
+    <BODY>
+
+        <div class="myDiv">
+            <form action = "/nature/request.cgi" method = "GET"> 
+                <button type="submit" class="btn btn-primary" >GET</button>
+            </form>
+        </div>
+        <div class="myDiv">
+            <form action = "/nature/request.cgi" method = "POST">
+                <input type="text" placeholder="Enter Roll no to update" name="rollno"><br>
+                <input type="text" placeholder="Enter new Name" name="name"><br><br>
+                <button type="submit" class="btn btn-primary">POST</button>
+            </form>
+        </div>
+        <div class="myDiv">
+            <form action = "/nature/request.cgi" method = "GET">
+                <input type="hidden" name="_method" value="PUT">
+                <input type="text" placeholder="Enter Roll no to add" name="rollno"><br>
+                <input type="text" placeholder="Enter Student Name" name="name"><br>
+                <input type="text" placeholder="Enter student marks" name="marks"><br>
+                <input type="text" placeholder="Enter Student City" name="city"><br><br>
+                <button type="submit" class="btn btn-primary">PUT</button>
+            </form>
+        </div>
+        <div class="myDiv">
+            <form action = "/nature/request.cgi" method = "GET">
+                <input type="hidden" name="_method" value="DELETE">
+                <input type="text" placeholder="Enter Roll no to delete" name="rollno"><br><br>
+                <button type="submit" class="btn btn-primary">Delete</button>
+            </form>
+         </div>
+</BODY></HTML>
+         
