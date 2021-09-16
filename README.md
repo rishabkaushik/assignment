@@ -2,6 +2,10 @@ Requirements:
 1. Create a github profile.
 2. Create 4 programs/procedures each for GET/POST/PUT/DELETE.
 
+API & References used:
+1. CGIDEV2
+2. Easy400.net
+
 List of programs/modules:
 1. MAIN.RPGLE
 2. REQUEST.RPGLE
